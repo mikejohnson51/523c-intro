@@ -6,9 +6,12 @@ author:
 format: html
 ---
 
-#  H1
+# H1
+
 ## H2
-##  H3
+
+## H3
+
 ### H4
 
 ```{r}
@@ -18,7 +21,7 @@ format: html
 
 ```{python}
 # Python 
-1+ 1 
+1 + 2
 ```
 
 ```{r}
@@ -29,8 +32,11 @@ format: html
 knitr::include_graphics("03-bit-byte.png")
 ```
 
+```{r}
+library(palmerpenguins)
 
+p <- penguins[1:5, 1:5]
 
-
-
-
+flextable::flextable(p) |> 
+  flextable::set_caption("This is a caption")
+```
