@@ -1,0 +1,36 @@
+---
+title: "523c Intro"
+author:
+  name: Mike
+  email: mikecp11@gmail.com
+format: html
+---
+
+#  H1
+## H2
+##  H3
+### H4
+
+```{r}
+# R code 
+1+1
+```
+
+```{python}
+# Python 
+1+ 1 
+```
+
+```{r}
+#| echo: false
+#| fig.align: "center"
+#| out.width: "100%"
+
+knitr::include_graphics("03-bit-byte.png")
+```
+
+
+
+
+
+
